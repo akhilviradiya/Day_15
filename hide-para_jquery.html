@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click on button and hide para</title>
+</head>
+<body>
+    <p id="para2">Hii my name is akhil</p>
+
+    <p class="para" style="display: none;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos quos quas quisquam ipsa. Rerum assumenda alias magnam veritatis error deleniti ipsa similique repellendus, sint nostrum consequuntur illum, ratione aspernatur!</p>
+    <button class="hide">hide text</button>
+    <button id="show">show text</button>
+    <button id="para1">show para</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(".hide").click(function(){
+            $("p").hide();
+        })
+        $("#show").click(function(){
+            $("#para2").show();
+        })
+        $("#para1").click(function(){
+            $(".para").show();
+        })
+    
+
+    </script>
+</body>
+</html>
